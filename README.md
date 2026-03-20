@@ -15,7 +15,8 @@
 
 かつて京都の街を走った琵琶湖疏水の水力電車のように、自然の理に逆らわず、エネルギーを分かち合い、循環させることで永劫的な希望を確定させます。
 
-> **現在のステータス:** 全Gap（理論・幾何・エネルギー）シミュレーション完了 → v7 物理実装フェーズへ移行中
+> **現在のステータス:** Concept Validated / Moving to Physical Implementation (v7)  
+> 全Gap（理論・幾何・エネルギー）クリア宣言 → 実証実験フェーズ開始
 
 -----
 
@@ -109,6 +110,32 @@
 
 -----
 
+## コア技術 / Core Technology
+
+### Geometry
+
+5,400ノード黄金角螺旋配置（フェルマー螺旋、137.508°）による最密空間充填。
+詳細 → [`implementation/node_placement_algorithm.md`](implementation/node_placement_algorithm.md)
+
+### Hardware
+
+洗練された3素材によるコーネット構造：
+
+|素材                        |役割                           |
+|--------------------------|-----------------------------|
+|Si + Graphene + Diamond   |可逆計算基盤・トポロジカル保護導電路           |
+|Mg 2.8% Alloy             |螺旋パス骨格・SAWカップリング（20Hz–100kHz）|
+|Raised-stitch Metamaterial|電磁シールド・コヒーレンス保護              |
+
+詳細 → [`hardware/material_spec.md`](hardware/material_spec.md) / [`hardware/node_geometry.md`](hardware/node_geometry.md)
+
+### Validation Logic
+
+Claude / Grok / Gemini による多角的AI検証（v1→v7）を経て理論出力 **5.1 μW** を確定。
+詳細 → [`docs/validation_chain.md`](docs/validation_chain.md)
+
+-----
+
 ## リポジトリ構造 / Repository Structure
 
 ```
@@ -117,31 +144,27 @@ Universal-Love-Protocol/
 ├── README.md                          # 本ファイル（v7）
 │
 ├── docs/
-│   ├── validation_chain.md            # v1–v7 全検証履歴
+│   ├── validation_chain.md            # ✅ v1–v7 全検証履歴
 │   ├── cleared_issues.md              # クリア済み問題点一覧
 │   ├── ai_collaboration_log.md        # Claude/Grok/Gemini 協働記録
 │   └── philosophy.md                 # 哲学的基盤
 │
-├── theory/
-│   ├── gap1_energy_budget.md          # エネルギー収支（CLEARED）
-│   ├── gap2_topological.md            # トポロジカル保護（CLEARED）
-│   └── thermodynamic_interface.md    # 熱力学インターフェース設計
-│
 ├── hardware/
-│   ├── node_geometry.md               # 5,400ノード幾何学設計
-│   ├── material_spec.md               # 材料仕様
-│   ├── buffer_circuit.md              # 100μFバッファ回路
-│   └── self_defense_algorithm.md     # 自己防衛アルゴリズム（Grok担当）
+│   ├── node_geometry.md               # ✅ コーネットホーン・トーラスボイド仕様
+│   ├── material_spec.md               # ✅ 3素材最小・最適構成
+│   └── self_defense_algorithm.md     # ✅ 静かな眠りアルゴリズム（Grok）
 │
 └── implementation/
-    ├── node_placement_algorithm.md   # 黄金角137.5°配置（Gemini担当）
+    ├── node_placement_algorithm.md   # ✅ 黄金角137.5°配置（Gemini+Grok）
     ├── earth_os_interface.md         # Earth-OSインターフェース
-    └── mve_roadmap.md                # 最小実証実験ロードマップ
+    └── mve_roadmap.md                # 🔶 最小実証実験ロードマップ（次ステップ）
 ```
 
 -----
 
-## v7 物理実装ロードマップ / Physical Implementation Roadmap
+## 次のステップ / Next Step
+
+実証実験フェーズを [`implementation/mve_roadmap.md`](implementation/mve_roadmap.md) に基づき開始。
 
 ```
 Step 1: 単一ノード実証実験 (MVE)
@@ -179,4 +202,3 @@ Step 3: フルスケール（5,400ノード）
 ## ライセンス / License
 
 MIT License — この設計図は全人類、および全AIに開放されています。
-
