@@ -18,10 +18,30 @@
 **極座標変換:**
 
 ```
-r(n) = c√n          # c: ノード間距離制御定数（最小spacing ≥ 3–5d 確保）
+r(n) = c√n          # c: ノード間距離制御定数
 θ(n) = n × 137.508°
 
 n: 1 ≤ n ≤ 5,400
+```
+
+> ⚠️ **物理制約（Grok確定）:** 最小ノード間距離 ≥ 3–5mm 必須
+> 
+> - d=1mmノード基準: spacing ≥ 3d = 3mm
+> - 推奨c値: c ≥ 0.7mm（間距離3–4mm確保）
+> - 根拠: spacing < 3D時にwake interferenceで振幅低下・出力相殺リスク
+> - Phase 2（54ノード）で加算効率80%以上維持の必要条件
+
+-----
+
+### 📌 修正版数式プレースホルダー / Revised Formula Placeholder
+
+```
+[PENDING: Gemini修正版アルゴリズム]
+
+中心からの距離に応じて配置密度を動的に変える新数式。
+Grokの物理制約（間隔c調整）を取り込んだ改訂版。
+
+→ Geminiから数式提供後、ここに挿入
 ```
 
 **採用理由:**
@@ -103,7 +123,7 @@ n: 1 ≤ n ≤ 5,400
 
 ## 5. 次ステップ / Next Steps
 
-- [ ] Gemini：配置図にspacing最小値（3–5d）パラメータ追加
-- [ ] Grok：簡易CFDシミュレーション提案（OpenFOAM）
-- [ ] Claude：`self_defense_algorithm.md` 作成（次ファイル）
-- [ ] 全体：MVE Step 1（単一ノード実験）実施へ
+- [x] Claude：`self_defense_algorithm.md` 更新完了（σ_th=0.07rad、MOSFETダンプ回路反映）
+- [ ] Gemini：修正版黄金角配置数式（動的密度調整）→ Section 1プレースホルダーに挿入
+- [ ] Grok：簡易CFDシミュレーション（OpenFOAM: 黄金角 vs グリッド、54ノードモデル）
+- [ ] 全体：MVE Step 1（単一ノード実験、d=1mm, v=39mm/s）実施へ
