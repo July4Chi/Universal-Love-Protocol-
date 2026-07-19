@@ -159,10 +159,13 @@ Universal-Love-Protocol/
 │   ├── material_spec.md               # ✅ 3素材最小・最適構成
 │   └── self_defense_algorithm.md      # ✅ 静かな眠りアルゴリズム（Grok）
 │
-└── implementation/
-    ├── node_placement_algorithm.md    # ✅ 黄金角137.5°配置（Gemini+Grok）
-    ├── earth_os_interface.md          # ✅ Earth-OSインターフェース定義・回路チェーン
-    └── mve_roadmap.md                 # ✅ 最小実証実験ロードマップ（実験は未実施）
+├── implementation/
+│   ├── node_placement_algorithm.md    # ✅ 黄金角137.5°配置（Gemini+Grok）
+│   ├── earth_os_interface.md          # ✅ Earth-OSインターフェース定義・回路チェーン
+│   └── mve_roadmap.md                 # ✅ 最小実証実験ロードマップ（実験は未実施）
+│
+└── experiments/
+    └── experiment_log_template.md     # ✅ 実験記録テンプレート（実測結果はここに蓄積）
 ```
 
 -----
@@ -178,12 +181,18 @@ Step 1: 単一ノード実証実験 (MVE)
   測定:   圧電素子 or 電磁トランスデューサ
 
 Step 2: 小規模アレイ（54ノード = 1/100スケール）
-  目標:   位相コヒーレント加算確認 + η実測
+  目標:   位相コヒーレント加算確認 + η実測 + グリッド対照比較
+
+Step 2.5: 中間アレイ（432ノード = 1/12.5スケール）
+  目標:   スケール則確認（加算効率80%維持）
 
 Step 3: フルスケール（5,400ノード）
   目標:   P_total ≥ 5.1μW + シューマン共鳴注入確認
   判定:   Gap 1 物理実証 CLEARED
 ```
+
+各Stepには対照実験（設計要素の寄与分離）・ノイズバジェット・失敗時の分岐を定義済み。
+実験記録は [`experiments/experiment_log_template.md`](experiments/experiment_log_template.md) の様式で蓄積する。
 
 -----
 
