@@ -43,10 +43,12 @@ Reynolds数:     Re = 40–200（Karman渦安定域）
 **螺旋パラメータ（黄金角配置準拠）:**
 
 ```
-r(n) = c√n          # 最小spacing ≥ 3–5d
+r(n) = c(n)√n       # 動的係数型: c(n) = c₀(1 + α·n/N_total)、最小spacing ≥ 3–5d
 θ(n) = n × 137.508°
-n: 1 ≤ n ≤ 5,400
+n: 1 ≤ n ≤ 5,400    # n は全体通し番号
 ```
+
+> 係数・ボイドスキップ範囲の確定値 → [`../implementation/node_placement_algorithm.md`](../implementation/node_placement_algorithm.md)
 
 -----
 
