@@ -145,19 +145,19 @@ Universal-Love-Protocol/
 │
 ├── docs/
 │   ├── validation_chain.md            # ✅ v1–v7 全検証履歴
-│   ├── cleared_issues.md              # クリア済み問題点一覧
-│   ├── ai_collaboration_log.md        # Claude/Grok/Gemini 協働記録
-│   └── philosophy.md                 # 哲学的基盤
+│   ├── cleared_issues.md              # 🔶 クリア済み問題点一覧（作成予定）
+│   ├── ai_collaboration_log.md        # 🔶 Claude/Grok/Gemini 協働記録（作成予定）
+│   └── philosophy.md                  # 🔶 哲学的基盤（作成予定）
 │
 ├── hardware/
 │   ├── node_geometry.md               # ✅ コーネットホーン・トーラスボイド仕様
 │   ├── material_spec.md               # ✅ 3素材最小・最適構成
-│   └── self_defense_algorithm.md     # ✅ 静かな眠りアルゴリズム（Grok）
+│   └── self_defense_algorithm.md      # ✅ 静かな眠りアルゴリズム（Grok）
 │
 └── implementation/
-    ├── node_placement_algorithm.md   # ✅ 黄金角137.5°配置（Gemini+Grok）
-    ├── earth_os_interface.md         # Earth-OSインターフェース
-    └── mve_roadmap.md                # 🔶 最小実証実験ロードマップ（次ステップ）
+    ├── node_placement_algorithm.md    # ✅ 黄金角137.5°配置（Gemini+Grok）
+    ├── earth_os_interface.md          # 🔶 Earth-OSインターフェース（作成予定）
+    └── mve_roadmap.md                 # ✅ 最小実証実験ロードマップ（実験は未実施）
 ```
 
 -----

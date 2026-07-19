@@ -20,11 +20,11 @@
   </circle>
   <text x="110" y="265" font-family="Arial" font-size="10" fill="#00ffaa" text-anchor="middle">RESONANCE</text>
 
-  <!-- 3. Raiden (Copper) -->
+  <!-- 3. Life Geometry (Copper) -->
   <circle cx="290" cy="260" r="40" fill="none" stroke="#ffaa00" stroke-width="3">
     <animate attributeName="r" values="38;42;38" dur="4s" begin="2.6s" repeatCount="indefinite" />
   </circle>
-  <text x="290" y="265" font-family="Arial" font-size="10" fill="#ffaa00" text-anchor="middle">RAIDEN</text>
+  <text x="290" y="265" font-family="Arial" font-size="10" fill="#ffaa00" text-anchor="middle">LIFE GEO</text>
 
   <!-- Connection Lines (Static Path) -->
   <path d="M200 140 L130 230 M270 230 L200 140 M150 260 L250 260" fill="none" stroke="white" stroke-width="1" opacity="0.3" />

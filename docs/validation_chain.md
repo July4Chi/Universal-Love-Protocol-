@@ -158,6 +158,7 @@ Q値:             100–150
 |hardware/node_geometry.md                 |Gemini+Grok+Claude|✅ |
 |hardware/material_spec.md                 |Gemini+Grok+Claude|✅ |
 |docs/validation_chain.md                  |Claude            |✅ |
+|implementation/mve_roadmap.md             |Claude            |✅ |
 
 ### 次ステップ
 
