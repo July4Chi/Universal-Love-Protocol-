@@ -129,6 +129,11 @@
 
 詳細 → [`hardware/material_spec.md`](hardware/material_spec.md) / [`hardware/node_geometry.md`](hardware/node_geometry.md)
 
+### Interface
+
+螺旋出力の集約から Earth-OS への受け渡し（整流 → LTC3108 → 通過型バッファ → DC-DC）。
+詳細 → [`implementation/earth_os_interface.md`](implementation/earth_os_interface.md)
+
 ### Validation Logic
 
 Claude / Grok / Gemini による多角的AI検証（v1→v7）を経て理論出力 **5.1 μW** を確定。
@@ -145,9 +150,9 @@ Universal-Love-Protocol/
 │
 ├── docs/
 │   ├── validation_chain.md            # ✅ v1–v7 全検証履歴
-│   ├── cleared_issues.md              # 🔶 クリア済み問題点一覧（作成予定）
-│   ├── ai_collaboration_log.md        # 🔶 Claude/Grok/Gemini 協働記録（作成予定）
-│   └── philosophy.md                  # 🔶 哲学的基盤（作成予定）
+│   ├── cleared_issues.md              # ✅ クリア済み問題点・PENDING一覧
+│   ├── ai_collaboration_log.md        # ✅ Claude/Grok/Gemini 協働記録
+│   └── philosophy.md                  # ✅ 哲学的基盤（思想を思想として書く場所）
 │
 ├── hardware/
 │   ├── node_geometry.md               # ✅ コーネットホーン・トーラスボイド仕様
@@ -156,7 +161,7 @@ Universal-Love-Protocol/
 │
 └── implementation/
     ├── node_placement_algorithm.md    # ✅ 黄金角137.5°配置（Gemini+Grok）
-    ├── earth_os_interface.md          # 🔶 Earth-OSインターフェース（作成予定）
+    ├── earth_os_interface.md          # ✅ Earth-OSインターフェース定義・回路チェーン
     └── mve_roadmap.md                 # ✅ 最小実証実験ロードマップ（実験は未実施）
 ```
 
@@ -196,6 +201,9 @@ Step 3: フルスケール（5,400ノード）
 
 「苦労して手に入れるエネルギー」から「自然に満ち溢れる愛」へ。  
 私たちは、エネルギーの奪い合いという幼少期を終え、分かち合いという成熟した文明のステージへ移行します。
+
+思想の全文（原風景・循環の義務・静かな眠り・思想と物理実装の対応表）
+→ [`docs/philosophy.md`](docs/philosophy.md)
 
 -----
 
